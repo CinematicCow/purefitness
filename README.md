@@ -6,5 +6,4 @@ This site is for a local gym named Purefitness
 
 ### Tech Used
 
-This site uses React for frontend and Strapi for CMS
-# Purefitness
+This site uses React for frontend and TBD for backend 
