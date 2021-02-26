@@ -1,4 +1,5 @@
 import "./App.css";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 import Navbar from "./components/Navbar"; // Line 9
 import Programs from "./components/Programs"; // Line 39
@@ -9,7 +10,13 @@ import Footer from "./components/Footer";
 function App() {
   return (
     <div id="fh5co-wrapper">
-      <div id="fh5co-page">
+      <div
+        id="fh5co-page"
+        // style={{
+        //   zIndex: "-999999 !important",
+        //   overflowX: "hidden",
+        // }}
+      >
         <Navbar />
         {/* Main background image black and upper portion */}
 
@@ -40,7 +47,7 @@ function App() {
         </div>
         {/* Main end background image black and upper portion */}
 
-        <Programs id="programs" />
+        <Programs />
 
         {/* overlay parallex image */}
         <div
