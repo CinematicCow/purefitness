@@ -1,3 +1,5 @@
+import { HashLink } from "react-router-hash-link";
+
 function Navbar() {
   return (
     <div id="fh5co-header">
@@ -16,19 +18,19 @@ function Navbar() {
             <nav id="fh5co-menu-wrap" role="navigation">
               <ul className="sf-menu" id="fh5co-primary-menu">
                 <li className="active">
-                  <a href="index.html">Home</a>
+                  <a href="/">Home</a>
                 </li>
                 <li>
-                  <a href="schedule.html">Schedule</a>
+                  <a href="#programs">Programs</a>
                 </li>
                 <li>
-                  <a href="trainer.html">Trainers</a>
+                  <a href="#trainers">Trainers</a>
                 </li>
                 <li>
-                  <a href="about.html">About</a>
+                  <a href="#price">Pricing</a>
                 </li>
                 <li>
-                  <a href="contact.html">Contact</a>
+                  <a href="#contact">Contact</a>
                 </li>
               </ul>
             </nav>
