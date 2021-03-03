@@ -20,15 +20,33 @@ trainerRouter.get("/", (req, res, next) => {
 
 // @desc Add new Trainer
 // @route POST /trainers/add
-trainerRouter.post("/add", (req, res, next) => {
+trainerRouter.post("/add", async (req, res, next) => {
   const params = req.body
+  const { name, type, about, image, social } = req.body
+
   const trainer = new Trainer({
-    name: params.name,
-    type: params.type,
-    about: params.about,
-    image: params.image,
-    social: [{}],
+    name,
+    type,
+    about,
+    image,
+    social: {
+      instagram: social.instagram,
+      facebook: social.facebook,
+      twitter: social.twitter,
+    },
   })
+
+  const data = await trainer.save()
+  if (data) {
+    res.status(201).json({
+      message: "Trainer Created",
+      data: data,
+    })
+  } else {
+    res.status(500).json({
+      message: "Error, mattu gandu!",
+    })
+  }
 })
 
 module.exports = trainerRouter

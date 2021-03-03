@@ -26,10 +26,10 @@ const trainerSchema = new mongoose.Schema({
     facebook: String,
     twitter: String,
   },
-  created_by: {
-    type: mongoose.Schema.Types.ObjectId,
-    ref: "User",
-  },
+  // created_by: {
+  //   type: mongoose.Schema.Types.ObjectId,
+  //   ref: "User",
+  // },
 })
 
 module.exports = mongoose.model("Trainer", trainerSchema)

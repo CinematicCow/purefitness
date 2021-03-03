@@ -18,10 +18,10 @@ const programSchema = new mongoose.Schema({
     type: Date,
     default: Date.now,
   },
-  created_by: {
-    type: mongoose.Schema.Types.ObjectId,
-    ref: "User",
-  },
+  // created_by: {
+  //   type: mongoose.Schema.Types.ObjectId,
+  //   ref: "User",
+  // },
 })
 
 module.exports = mongoose.model("Program", programSchema)
