@@ -1,5 +1,10 @@
 const mongoose = require("mongoose")
 
+// const socialSchema = new mongoose.Schema({
+//   name: String,
+//   link: String,
+// })
+
 const trainerSchema = new mongoose.Schema({
   name: {
     type: String,
@@ -24,11 +29,13 @@ const trainerSchema = new mongoose.Schema({
   updated_at: {
     type: Date,
   },
-  social: {
-    instagram: String,
-    facebook: String,
-    twitter: String,
-  },
+  social: [
+    {
+      name: String,
+      link: String,
+    },
+  ],
+
   // created_by: {
   //   type: mongoose.Schema.Types.ObjectId,
   //   ref: "User",

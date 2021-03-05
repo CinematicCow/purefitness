@@ -6,7 +6,7 @@ const Trainer = require("../database/models/trainerModel")
 // @route GET /trainers/
 trainerRouter.get("/", (req, res, next) => {
   Trainer.find()
-    .select("_id name type about social")
+    // .select("_id name type about social")
     .exec()
     .then((docs) => {
       const response = {
@@ -82,11 +82,7 @@ trainerRouter.post("/add", (req, res, next) => {
     type,
     about,
     image,
-    social: {
-      instagram: social.instagram,
-      facebook: social.facebook,
-      twitter: social.twitter,
-    },
+    social,
   })
 
   trainer
