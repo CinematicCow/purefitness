@@ -134,4 +134,23 @@ trainerRouter.put("/edit/:trainerID", async (req, res, next) => {
   // Trainer.findOneAndUpdate({ _id: id }, { $set: updateOps })
 })
 
+// @desc Delete a trainer
+// @route DELETE /trainers/:id
+trainerRouter.delete("/:trainerID", (req, res, next) => {
+  const id = req.params.trainerID
+  Trainer.remove({ _id: id })
+    .exec()
+    .then((result) => {
+      res.status(200).json({
+        message: "Trainer deleted",
+      })
+    })
+    .catch((err) => {
+      console.log(err)
+      res.status(500).json({
+        error: err,
+      })
+    })
+})
+
 module.exports = trainerRouter
