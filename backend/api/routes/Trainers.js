@@ -2,11 +2,11 @@ const express = require("express")
 const trainerRouter = express.Router()
 const Trainer = require("../database/models/trainerModel")
 
-// @desc Get all Trainers
-// @route GET /trainers/
+//* @desc Get all Trainers
+//* @route GET /
 trainerRouter.get("/", (req, res, next) => {
   Trainer.find()
-    // .select("_id name type about social")
+    .select("_id name type about social")
     .exec()
     .then((docs) => {
       const response = {
@@ -22,7 +22,7 @@ trainerRouter.get("/", (req, res, next) => {
           }
         }),
       }
-      if (docs.length >= 0) {
+      if (docs.length > 0) {
         res.status(200).json(response)
       } else {
         res.status(404).json({
@@ -38,14 +38,14 @@ trainerRouter.get("/", (req, res, next) => {
     })
 })
 
-// @desc Get a Trainer
-// @route GET /trainers/:id
+//* @desc Get a Trainer
+//* @route GET /:id
 trainerRouter.get("/:trainerID", (req, res, next) => {
   const id = req.params.trainerID
   Trainer.findById(id)
     .exec()
     .then((doc) => {
-      //console.log("from DB", doc)
+      //! console.log("from DB", doc)
       if (doc) {
         const { _id, name, type, about, image, created_at, social } = doc
         res.status(200).json({
@@ -71,10 +71,9 @@ trainerRouter.get("/:trainerID", (req, res, next) => {
     })
 })
 
-// @desc Add new Trainer
-// @route POST /trainers/add
+//* @desc Add new Trainer
+//* @route POST /add
 trainerRouter.post("/add", (req, res, next) => {
-  const params = req.body
   const { name, type, about, image, social } = req.body
 
   const trainer = new Trainer({
@@ -102,8 +101,8 @@ trainerRouter.post("/add", (req, res, next) => {
     })
 })
 
-// @desc Update a Trainer
-// @route PUT /trainers/edit/:id
+//* @desc Update a Trainer
+//* @route PUT /edit/:id
 trainerRouter.put("/edit/:trainerID", async (req, res, next) => {
   const id = req.params.trainerID
 
@@ -122,16 +121,16 @@ trainerRouter.put("/edit/:trainerID", async (req, res, next) => {
       })
     })
 
-  // const updateOps = {}
-  // for (const ops of req.body) {
-  //   updateOps[ops.propName] = ops.value
-  // }
+  //// const updateOps = {}
+  //// for (const ops of req.body) {
+  ////  updateOps[ops.propName] = ops.value
+  //// }
 
-  // Trainer.findOneAndUpdate({ _id: id }, { $set: updateOps })
+  //// Trainer.findOneAndUpdate({ _id: id }, { $set: updateOps })
 })
 
-// @desc Delete a trainer
-// @route DELETE /trainers/:id
+//* @desc Delete a trainer
+//* @route DELETE /:id
 trainerRouter.delete("/:trainerID", (req, res, next) => {
   const id = req.params.trainerID
   Trainer.remove({ _id: id })
