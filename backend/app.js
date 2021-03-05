@@ -16,6 +16,7 @@ connectDB()
 //* Import Routes
 const trainerRoutes = require("./api/routes/Trainers")
 const programRoutes = require("./api/routes/Programs")
+const priceRoutes = require("./api/routes/Price")
 
 //* Body Parser
 app.use(bodyParser.urlencoded({ extended: false }))
@@ -30,5 +31,22 @@ app.get("/", (req, res) => {
 
 app.use("/trainers", trainerRoutes)
 app.use("/programs", programRoutes)
+app.use("/prices", priceRoutes)
+
+//* Error Handling
+app.use((req, res, next) => {
+  const error = new Error("Not found")
+  error.status = 404
+  next(error)
+})
+
+app.use((error, req, res, next) => {
+  res.status(error.status || 500)
+  res.json({
+    error: {
+      message: error.message,
+    },
+  })
+})
 
 module.exports = app

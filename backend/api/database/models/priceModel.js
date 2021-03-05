@@ -7,18 +7,19 @@ const priceSchema = new mongoose.Schema({
     trim: true,
   },
   price: {
-    type: String,
+    type: Number,
     required: true,
   },
   description: {
     type: String,
     required: true,
   },
-  more_prices: {
-    three_months: Number,
-    six_months: Number,
-    twelve_months: Number,
-  },
+  more_prices: [
+    {
+      duration: String,
+      price: Number,
+    },
+  ],
   createdAt: {
     type: Date,
     default: Date.now,
