@@ -1,4 +1,4 @@
-import React from "react";
+import React from "react"
 
 function Footer() {
   return (
@@ -7,7 +7,7 @@ function Footer() {
         <div id="footer">
           <div className="container">
             <div className="row">
-              <div className="col-md-4 animate-box">
+              <div className="col-md-4 ">
                 <h3 className="section-title">About Us</h3>
                 <p>
                   Far far away, behind the word mountains, far from the
@@ -16,95 +16,39 @@ function Footer() {
                   the Semantics.
                 </p>
               </div>
-              <div className="col-md-4 animate-box">
+              <div className="col-md-4 ">
                 <h3 className="section-title">Our Address</h3>
                 <ul className="contact-info">
                   <li>
                     <i className="icon-map-marker" />
-                    2nd floor, XYZ Complex, Opposite Central Church, Neshvilla
-                    Road, Dehradun-248001
+                    <a href="https://goo.gl/maps/sbiqsJrnNMiRvbXi9">
+                      {" "}
+                      2nd Floor, 17, Neshvilla Rd, near Central Methodist
+                      Church, Dobhalwala, Chukkuwala, Dehradun, Uttarakhand
+                      248001{" "}
+                    </a>
                   </li>
                   <li>
-                    <i className="icon-phone" />
-                    (+91)1234567890
+                    <i className="icon-whatsapp" />
+                    <a href="https://wa.link/penra3"> (+91)789-5555-620</a>
                   </li>
                   <li>
                     <i className="icon-envelope" />
-                    <a href="#">Raj@purefitness.com</a>
+                    <a href="mailto:raj.fitnessworld@gmail.com?subject=Gym Enquiry">
+                      raj.fitnessworld@gmail.com
+                    </a>
                   </li>
                   <li>
                     <i className="icon-globe2" />
-                    <a href="#">www.purefitness.com</a>
+                    <a href="https://purefitness.co.in">
+                      www.purefitness.co.in
+                    </a>
                   </li>
                 </ul>
-              </div>
-              <div className="col-md-4 animate-box">
-                <h3 className="section-title">Drop us a line</h3>
-                <form className="contact-form">
-                  <div className="form-group">
-                    <label htmlFor="name" className="sr-only">
-                      Name
-                    </label>
-                    <input
-                      type="name"
-                      className="form-control"
-                      id="name"
-                      placeholder="Name"
-                    />
-                  </div>
-                  <div className="form-group">
-                    <label htmlFor="email" className="sr-only">
-                      Email
-                    </label>
-                    <input
-                      type="email"
-                      className="form-control"
-                      id="email"
-                      placeholder="Email"
-                    />
-                  </div>
-                  <div className="form-group">
-                    <label htmlFor="message" className="sr-only">
-                      Message
-                    </label>
-                    <textarea
-                      className="form-control"
-                      id="message"
-                      rows={7}
-                      placeholder="Message"
-                      defaultValue={""}
-                    />
-                  </div>
-                  <div className="form-group">
-                    <input
-                      type="submit"
-                      id="btn-submit"
-                      className="btn btn-send-message btn-md"
-                      defaultValue="Send Message"
-                    />
-                  </div>
-                </form>
               </div>
             </div>
             <div className="row copy-right">
               <div className="col-md-6 col-md-offset-3 text-center">
-                <p className="fh5co-social-icons">
-                  <a href="#">
-                    <i className="icon-twitter2" />
-                  </a>
-                  <a href="#">
-                    <i className="icon-facebook2" />
-                  </a>
-                  <a href="#">
-                    <i className="icon-instagram" />
-                  </a>
-                  <a href="#">
-                    <i className="icon-dribbble2" />
-                  </a>
-                  <a href="#">
-                    <i className="icon-youtube" />
-                  </a>
-                </p>
                 <p>Copyright © 2021 Pure Fitness. All Rights Reserved.</p>
               </div>
             </div>
@@ -112,7 +56,7 @@ function Footer() {
         </div>
       </footer>
     </div>
-  );
+  )
 }
 
-export default Footer;
+export default Footer

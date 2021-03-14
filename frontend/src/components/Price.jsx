@@ -1,4 +1,4 @@
-import React from "react";
+import React from "react"
 
 function Price() {
   return (
@@ -10,7 +10,7 @@ function Price() {
         <div className="container">
           <div className="row">
             <div className="col-md-8 col-md-offset-2">
-              <div className="heading-section text-center animate-box">
+              <div className="heading-section text-center ">
                 <h2>Pricing Plan</h2>
                 <p>
                   Separated they live in Bookmarksgrove right at the coast of
@@ -21,8 +21,8 @@ function Price() {
           </div>
           <div className="row">
             <div className="pricing">
-              <div className="col-md-3 animate-box">
-                <div className="price-box animate-box">
+              <div className="col-md-3 ">
+                <div className="price-box ">
                   <h2 className="pricing-plan">Starter</h2>
                   <div className="price">
                     <sup className="currency">$</sup>9<small>/month</small>
@@ -50,7 +50,7 @@ function Price() {
         </div>
       </div>
     </div>
-  );
+  )
 }
 
-export default Price;
+export default Price

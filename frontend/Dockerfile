@@ -1,10 +1,10 @@
 FROM node:lts-alpine 
 WORKDIR /usr/src/app
-COPY frontend/package*.json ./
+COPY ["package.json", "package-lock.json*", "npm-shrinkwrap.json*", "./"]
 RUN ls -l
 RUN npm install
-COPY frontend ./
+COPY . ./
 RUN ls -l
 RUN npm run build
-EXPOSE 3000
-CMD ["npm","start"]
+EXPOSE 5000
+CMD ["npm","run","serve"]

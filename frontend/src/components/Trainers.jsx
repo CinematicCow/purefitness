@@ -1,4 +1,4 @@
-import React from "react";
+import React from "react"
 
 function Trainers() {
   return (
@@ -7,7 +7,7 @@ function Trainers() {
         <div className="container">
           <div className="row">
             <div className="col-md-8 col-md-offset-2">
-              <div className="heading-section text-center animate-box">
+              <div className="heading-section text-center ">
                 <h2>Meet Our Trainers</h2>
                 <p>
                   Separated they live in Bookmarksgrove right at the coast of
@@ -20,7 +20,10 @@ function Trainers() {
             <div className="col-md-4 col-sm-6">
               <div
                 className="team-section-grid"
-                style={{ backgroundImage: "url(images/trainer-1.jpg)" }}
+                style={{
+                  backgroundImage:
+                    "url(https://i.ibb.co/WtPGmRT/raj-trainer.jpg)",
+                }}
               >
                 <div className="overlay-section">
                   <div className="desc">
@@ -49,7 +52,7 @@ function Trainers() {
         </div>
       </div>
     </div>
-  );
+  )
 }
 
-export default Trainers;
+export default Trainers

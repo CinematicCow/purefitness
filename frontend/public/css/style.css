@@ -335,7 +335,7 @@ figure {
 #fh5co-logo a {
   position: relative;
 }
-#fh5co-logo a:after {
+/* #fh5co-logo a:after {
   position: absolute;
   content: "";
   top: -5px;
@@ -343,7 +343,7 @@ figure {
   background: #da1212;
   width: 10px;
   height: 10px;
-}
+} */
 #fh5co-logo span {
   padding: 0;
   margin: 0;

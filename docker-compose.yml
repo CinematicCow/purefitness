@@ -1,0 +1,48 @@
+version: "3"
+
+services:
+  app:
+    container_name: pf-front
+    image: purefitness-frontend
+    build: ./frontend/
+    environment:
+      CHOKIDAR_USEPOLLING: "true"
+    restart: always
+    networks:
+      - local_net
+    depends_on:
+      - api
+      - mongo
+    ports:
+      - "80:5000"
+
+  api:
+    container_name: pf-back
+    image: purefitness-backend
+    build: ./backend/
+    networks:
+      - local_net
+    environment:
+      MONGO_URI: "mongodb://mongo:27017/purefitness-backend"
+    restart: always
+    depends_on:
+      - mongo
+    ports:
+      - "3000:3000"
+
+  mongo:
+    container_name: mongodb
+    image: mongo
+    networks:
+      - local_net
+    volumes:
+      - data:/data/db
+    ports:
+      - "27017:27017"
+
+volumes:
+  data:
+
+networks:
+  local_net:
+    driver: bridge

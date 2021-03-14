@@ -121,12 +121,16 @@ trainerRouter.put("/edit/:trainerID", async (req, res, next) => {
       })
     })
 
-  //// const updateOps = {}
-  //// for (const ops of req.body) {
-  ////  updateOps[ops.propName] = ops.value
-  //// }
+    /*   {
+      name : prajwal -> Kanhiya ,
 
-  //// Trainer.findOneAndUpdate({ _id: id }, { $set: updateOps })
+    } ,
+    {
+      name:Kanhiya
+    }
+
+    */ 
+
 })
 
 //* @desc Delete a trainer
