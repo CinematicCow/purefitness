@@ -46,4 +46,4 @@ jobs:
         with:
           webhook_id: ${{ secrets.WEBHOOK_ID }}
           webhook_token: ${{ secrets.WEBHOOK_TOKEN }}
-          message: The ${{github.event_name}} ran successfuly
+          message: Pushed to Netlify ran successfuly
