@@ -41,7 +41,7 @@ function Footer() {
                   <li>
                     <i className="icon-globe2" />
                     <a href="https://purefitness.co.in">
-                      www.purefitness.co.in/
+                      www.purefitness.co.in
                     </a>
                   </li>
                 </ul>
