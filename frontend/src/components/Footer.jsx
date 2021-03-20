@@ -10,10 +10,10 @@ function Footer() {
               <div className="col-md-4 ">
                 <h3 className="section-title">About Us</h3>
                 <p>
-                  Far far away, behind the word mountains, far from the
-                  countries Vokalia and Consonantia, there live the blind texts.
-                  Separated they live in Bookmarksgrove right at the coast of
-                  the Semantics.
+                  PureFitness Gym by Raj Rawat. We specialize in weight loss,
+                  weight gain, CrossFit, Cardio Training, Professional Training,
+                  Yoga, Outdoor Actvities & Personal Training. Contact us for
+                  more information.
                 </p>
               </div>
               <div className="col-md-4 ">
@@ -49,7 +49,7 @@ function Footer() {
             </div>
             <div className="row copy-right">
               <div className="col-md-6 col-md-offset-3 text-center">
-                <p>Copyright © 2021 Pure Fitness. All Rights Reserved.</p>
+                <p>Copyright© 2021 Pure Fitness. All Rights Reserved.</p>
               </div>
             </div>
           </div>
