@@ -1,3 +1,3 @@
 # Pure Fitness Frontend
 
-#### Nothing more, sadlyy
+#### Nothing more, sadly
