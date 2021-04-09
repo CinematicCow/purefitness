@@ -13,7 +13,7 @@ export default function Home() {
         <div id="fh5co-page">
           <Navbar />
 
-          {/* Main background image black and upper portion */}
+          {/* Main backgr ound image black and upper portion */}
 
           <div className="fh5co-hero">
             <div className="fh5co-overlay" />
