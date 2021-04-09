@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>Pure Fitness</title>
+        <title>Pure Fitness - Coming Soon</title>
       </Head>
 
       <div id="fh5co-wrapper">
