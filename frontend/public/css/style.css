@@ -1,11 +1,7 @@
 @font-face {
-  font-family: "icomoon";
+  font-family: 'icomoon';
   src: url("../fonts/icomoon/icomoon.eot?srf3rx");
-  src: url("../fonts/icomoon/icomoon.eot?srf3rx#iefix")
-      format("embedded-opentype"),
-    url("../fonts/icomoon/icomoon.ttf?srf3rx") format("truetype"),
-    url("../fonts/icomoon/icomoon.woff?srf3rx") format("woff"),
-    url("../fonts/icomoon/icomoon.svg?srf3rx#icomoon") format("svg");
+  src: url("../fonts/icomoon/icomoon.eot?srf3rx#iefix") format("embedded-opentype"), url("../fonts/icomoon/icomoon.ttf?srf3rx") format("truetype"), url("../fonts/icomoon/icomoon.woff?srf3rx") format("woff"), url("../fonts/icomoon/icomoon.svg?srf3rx#icomoon") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -29,31 +25,24 @@ body.fh5co-offcanvas {
 }
 
 a {
-  color: #4cb648;
+  color: #4CB648;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
 }
 a:hover {
   text-decoration: none !important;
-  color: #4cb648 !important;
+  color: #4CB648 !important;
 }
 
-p,
-ul,
-ol {
+p, ul, ol {
   margin-bottom: 1.5em;
   font-size: 20px;
   color: #848484;
   font-family: "Roboto", Arial, sans-serif;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
   color: #212121;
   font-family: "Roboto", Arial, sans-serif;
   font-weight: 400;
@@ -66,17 +55,17 @@ figure {
 
 ::-webkit-selection {
   color: #fcfcfc;
-  background: #4cb648;
+  background: #4CB648;
 }
 
 ::-moz-selection {
   color: #fcfcfc;
-  background: #4cb648;
+  background: #4CB648;
 }
 
 ::selection {
   color: #fcfcfc;
-  background: #4cb648;
+  background: #4CB648;
 }
 
 #fh5co-header {
@@ -135,7 +124,7 @@ figure {
 }
 .fh5co-cover .btn {
   padding: 1em 2em;
-  opacity: 0.9;
+  opacity: .9;
   -webkit-border-radius: 30px;
   -moz-border-radius: 30px;
   -ms-border-radius: 30px;
@@ -186,13 +175,12 @@ figure {
   color: rgba(255, 255, 255, 0.8);
 }
 .fh5co-cover .desc span i {
-  color: #da1212;
+  color: #DA1212;
 }
 .fh5co-cover .desc span a {
   color: rgba(255, 255, 255, 0.8);
 }
-.fh5co-cover .desc span a:hover,
-.fh5co-cover .desc span a:focus {
+.fh5co-cover .desc span a:hover, .fh5co-cover .desc span a:focus {
   color: #fff !important;
 }
 .fh5co-cover .desc span a.fh5co-site-name {
@@ -229,13 +217,11 @@ figure {
   border-bottom: none !important;
   font-weight: 300;
 }
-.sf-menu a:hover,
-.sf-menu a:focus {
+.sf-menu a:hover, .sf-menu a:focus {
   color: #fff !important;
 }
 
-.sf-menu li.active a:hover,
-.sf-menu li.active a:focus {
+.sf-menu li.active a:hover, .sf-menu li.active a:focus {
   color: #fff;
 }
 
@@ -277,7 +263,7 @@ figure {
 }
 
 .sf-arrows .sf-with-ul:after {
-  content: "";
+  content: '';
   position: absolute;
   top: 50%;
   right: 1em;
@@ -335,15 +321,15 @@ figure {
 #fh5co-logo a {
   position: relative;
 }
-/* #fh5co-logo a:after {
+#fh5co-logo a:after {
   position: absolute;
-  content: "";
+  content: '';
   top: -5px;
   left: -9px;
-  background: #da1212;
+  background: #DA1212;
   width: 10px;
   height: 10px;
-} */
+}
 #fh5co-logo span {
   padding: 0;
   margin: 0;
@@ -359,8 +345,7 @@ figure {
 #fh5co-logo a {
   color: #fff;
 }
-#fh5co-logo a:hover,
-#fh5co-logo a:focus {
+#fh5co-logo a:hover, #fh5co-logo a:focus {
   color: #fff !important;
 }
 
@@ -372,11 +357,11 @@ figure {
 }
 
 #fh5co-primary-menu > li > ul li.active > a {
-  color: #4cb648 !important;
+  color: #4CB648 !important;
 }
 #fh5co-primary-menu > li > .sf-with-ul:after {
   border: none !important;
-  font-family: "icomoon";
+  font-family: 'icomoon';
   speak: none;
   font-style: normal;
   font-weight: normal;
@@ -399,7 +384,7 @@ figure {
 }
 #fh5co-primary-menu > li > ul li > .sf-with-ul:after {
   border: none !important;
-  font-family: "icomoon";
+  font-family: 'icomoon';
   speak: none;
   font-style: normal;
   font-weight: normal;
@@ -442,7 +427,7 @@ figure {
   left: 20px;
   width: 0;
   height: 0;
-  content: "";
+  content: '';
 }
 
 #fh5co-primary-menu .fh5co-sub-menu:after {
@@ -454,7 +439,7 @@ figure {
   border-right: 8px solid transparent;
   border-bottom: 8px solid #fff;
   border-left: 8px solid transparent;
-  content: "";
+  content: '';
 }
 
 #fh5co-primary-menu .fh5co-sub-menu .fh5co-sub-menu:before {
@@ -490,7 +475,7 @@ figure {
   background: none;
 }
 #fh5co-primary-menu .fh5co-sub-menu a:hover {
-  color: #4cb648 !important;
+  color: #4CB648 !important;
 }
 
 #fh5co-programs-section,
@@ -558,8 +543,7 @@ figure {
   display: block;
   font-size: 12px;
 }
-.program.program-schedule:hover,
-.program.program-schedule:focus {
+.program.program-schedule:hover, .program.program-schedule:focus {
   -webkit-box-shadow: 0px 6px 55px -23px rgba(0, 0, 0, 0.72);
   -moz-box-shadow: 0px 6px 55px -23px rgba(0, 0, 0, 0.72);
   box-shadow: 0px 6px 55px -23px rgba(0, 0, 0, 0.72);
@@ -581,12 +565,11 @@ figure {
   padding: 5px 20px;
   cursor: pointer;
 }
-.schedule li a:active,
-.schedule li a:focus {
+.schedule li a:active, .schedule li a:focus {
   text-decoration: none;
 }
 .schedule li a.active {
-  background: #4cb648;
+  background: #4CB648;
   color: #fff !important;
   -webkit-border-radius: 30px;
   -moz-border-radius: 30px;
@@ -639,7 +622,7 @@ figure {
   right: 0;
   bottom: 0;
   background: black;
-  opacity: 0.2;
+  opacity: .2;
 }
 
 @media screen and (max-width: 768px) {
@@ -708,10 +691,10 @@ figure {
   position: relative;
 }
 .fh5co-pricing .price-box.popular .btn-select-plan {
-  background: #4cb648;
+  background: #4CB648;
 }
 .fh5co-pricing .price-box.popular .price {
-  color: #4cb648;
+  color: #4CB648;
 }
 .fh5co-pricing .price-box .btn-select-plan {
   padding: 10px 20px;
@@ -799,8 +782,7 @@ figure {
 .team-section-grid .overlay-section p {
   color: rgba(255, 255, 255, 0.7);
 }
-.team-section-grid .overlay-section p.fh5co-social-icons a:hover,
-.team-section-grid .overlay-section p.fh5co-social-icons a:focus {
+.team-section-grid .overlay-section p.fh5co-social-icons a:hover, .team-section-grid .overlay-section p.fh5co-social-icons a:focus {
   text-decoration: none !important;
 }
 .team-section-grid .overlay-section p.fh5co-social-icons i {
@@ -842,7 +824,7 @@ figure {
 }
 #fh5co-contact .contact-info li i {
   position: absolute;
-  top: 0.3em;
+  top: .3em;
   left: 0;
   font-size: 22px;
   color: rgba(0, 0, 0, 0.2);
@@ -866,8 +848,7 @@ figure {
   -ms-border-radius: 0px;
   border-radius: 0px;
 }
-#fh5co-contact .form-control:focus,
-#fh5co-contact .form-control:active {
+#fh5co-contact .form-control:focus, #fh5co-contact .form-control:active {
   border-bottom: 1px solid rgba(0, 0, 0, 0.5);
 }
 #fh5co-contact input[type="text"] {
@@ -941,7 +922,7 @@ figure {
   top: 0;
   left: 0;
   padding: 10px 20px;
-  background: #4cb648;
+  background: #4CB648;
 }
 @media screen and (max-width: 768px) {
   .fh5co-blog .meta-date {
@@ -997,14 +978,12 @@ figure {
 
 .fh5co-social-icons > a {
   padding: 4px 10px;
-  color: #4cb648;
+  color: #4CB648;
 }
 .fh5co-social-icons > a i {
   font-size: 26px;
 }
-.fh5co-social-icons > a:hover,
-.fh5co-social-icons > a:focus,
-.fh5co-social-icons > a:active {
+.fh5co-social-icons > a:hover, .fh5co-social-icons > a:focus, .fh5co-social-icons > a:active {
   text-decoration: none;
   color: #212121;
 }
@@ -1044,10 +1023,7 @@ figure {
 }
 #footer .contact-form .form-group input[type="name"]::-webkit-input-placeholder,
 #footer .contact-form .form-group input[type="text"]::-webkit-input-placeholder,
-#footer
-  .contact-form
-  .form-group
-  input[type="email"]::-webkit-input-placeholder,
+#footer .contact-form .form-group input[type="email"]::-webkit-input-placeholder,
 #footer .contact-form .form-group textarea::-webkit-input-placeholder {
   color: rgba(255, 255, 255, 0.5);
 }
@@ -1087,7 +1063,7 @@ figure {
 }
 #footer #btn-submit {
   color: rgba(255, 255, 255, 0.9) !important;
-  background: #4cb648 !important;
+  background: #4CB648 !important;
 }
 #footer .copy-right {
   border-top: 1px solid rgba(255, 255, 255, 0.1);
@@ -1118,28 +1094,22 @@ figure {
   transition: 0.3s;
 }
 .btn.btn-primary {
-  background: #4cb648;
+  background: #4CB648;
   color: #fff;
   border: none !important;
   border: 2px solid transparent !important;
 }
-.btn.btn-primary:hover,
-.btn.btn-primary:active,
-.btn.btn-primary:focus {
+.btn.btn-primary:hover, .btn.btn-primary:active, .btn.btn-primary:focus {
   box-shadow: none;
-  background: #4cb648;
+  background: #4CB648;
   color: #fff !important;
 }
-.btn:hover,
-.btn:active,
-.btn:focus {
+.btn:hover, .btn:active, .btn:focus {
   background: #393e46 !important;
   color: #fff !important;
   outline: none !important;
 }
-.btn.btn-default:hover,
-.btn.btn-default:focus,
-.btn.btn-default:active {
+.btn.btn-default:hover, .btn.btn-default:focus, .btn.btn-default:active {
   border-color: transparent;
 }
 
@@ -1204,14 +1174,14 @@ figure {
   color: rgba(255, 255, 255, 0.4);
 }
 #offcanvas-menu ul li a:hover {
-  color: #4cb648;
+  color: #4CB648;
 }
 #offcanvas-menu ul li > .fh5co-sub-menu {
   margin-top: 9px;
   padding-left: 20px;
 }
 #offcanvas-menu ul li.active > a {
-  color: #4cb648;
+  color: #4CB648;
 }
 #offcanvas-menu ul .fh5co-sub-menu {
   display: block !important;
@@ -1221,17 +1191,13 @@ figure {
   cursor: pointer;
   text-decoration: none;
 }
-.fh5co-nav-toggle.active i::before,
-.fh5co-nav-toggle.active i::after {
+.fh5co-nav-toggle.active i::before, .fh5co-nav-toggle.active i::after {
   background: #fff;
 }
-.fh5co-nav-toggle.dark.active i::before,
-.fh5co-nav-toggle.dark.active i::after {
+.fh5co-nav-toggle.dark.active i::before, .fh5co-nav-toggle.dark.active i::after {
   background: #fff;
 }
-.fh5co-nav-toggle:hover,
-.fh5co-nav-toggle:focus,
-.fh5co-nav-toggle:active {
+.fh5co-nav-toggle:hover, .fh5co-nav-toggle:focus, .fh5co-nav-toggle:active {
   outline: none;
   border-bottom: none !important;
 }
@@ -1244,15 +1210,14 @@ figure {
   width: 30px;
   height: 2px;
   color: #fff;
-  font: bold 14px/0.4 Helvetica;
+  font: bold 14px/.4 Helvetica;
   text-transform: uppercase;
   text-indent: -55px;
   background: #fff;
-  transition: all 0.2s ease-out;
+  transition: all .2s ease-out;
 }
-.fh5co-nav-toggle i::before,
-.fh5co-nav-toggle i::after {
-  content: "";
+.fh5co-nav-toggle i::before, .fh5co-nav-toggle i::after {
+  content: '';
   width: 30px;
   height: 2px;
   background: #fff;
@@ -1266,10 +1231,9 @@ figure {
   position: relative;
   color: #000;
   background: #000;
-  transition: all 0.2s ease-out;
+  transition: all .2s ease-out;
 }
-.fh5co-nav-toggle.dark i::before,
-.fh5co-nav-toggle.dark i::after {
+.fh5co-nav-toggle.dark i::before, .fh5co-nav-toggle.dark i::after {
   background: #000;
   -webkit-transition: 0.2s;
   -o-transition: 0.2s;
