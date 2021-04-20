@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "prices",
+  "info": {
+    "name": "price"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "price": {
+      "type": "integer",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    },
+    "three_month": {
+      "type": "integer"
+    },
+    "six_month": {
+      "type": "integer"
+    },
+    "twelve_month": {
+      "type": "integer"
+    }
+  }
+}
