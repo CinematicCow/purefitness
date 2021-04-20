@@ -47,6 +47,7 @@ const Footer = () => {
             </div>
             <div className="row copy-right">
               <div className="col-md-6 col-md-offset-3 text-center">
+
                 <p>©Copyright 2021 Pure Fitness. All Rights Reserved.</p>
               </div>
             </div>
