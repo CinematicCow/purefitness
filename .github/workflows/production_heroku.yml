@@ -11,6 +11,7 @@ jobs:
     runs-on: ubuntu-18.04
     defaults:
       run:
+        shell: bash
         working-directory: backend
     steps:
       - name: Checkout code
